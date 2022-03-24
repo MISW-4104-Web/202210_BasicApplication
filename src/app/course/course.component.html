@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="col-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="h4">Course's Name</th>
+          <th class="h4">Professor's Name</th>
+          <th class="h4">Credits</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let c of courses">
+          <td>
+            <dd>{{ c.name }}</dd>
+          </td>
+          <td>
+            <dd>{{ c.professor }}</dd>
+          </td>
+          <td>
+            <dd>{{ c.credits }}</dd>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
